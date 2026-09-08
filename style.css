@@ -1,0 +1,1249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.header-main {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 50px;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* Navigation */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main-nav a {
+    position: relative;
+
+    text-decoration: none;
+    color: white;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    padding-bottom: 5px;
+}
+
+/* Burger */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Navigation Hover */
+
+.main-nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 1px;
+
+    background: white;
+
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    background-image: url("Pictures/background1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark Overlay */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.25);
+
+    z-index: 0;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.main-content {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    text-align: center;
+
+    font-family: 'Cinzel', serif;
+}
+
+.main-content h3 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* Call Now Button */
+
+.main-content button {
+    display: flex;
+
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    margin: 20px auto;
+    padding: 10px 20px;
+
+    background-color: transparent;
+
+    border: 2px solid white;
+
+    color: white;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.main-content button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* =========================
+   ABOUT MARCI
+========================= */
+
+.about-marci {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 100px 8%;
+
+    background-color: white;
+    color: #222;
+}
+
+/* Marci Image */
+
+.marci-image {
+    width: 400px;
+}
+
+.marci-image img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 50%;
+}
+
+/* Marci Information */
+
+.marci-info {
+    max-width: 500px;
+}
+
+.marci-info h2 {
+    font-family: 'Cinzel', serif;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+}
+
+.marci-info h3 {
+    font-family: 'Cinzel', serif;
+
+    font-size: 1rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.marci-info p {
+    font-family: Georgia, serif;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+/* Contact Button */
+
+.contact-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 28px;
+
+    background: transparent;
+
+    color: #222;
+
+    border: 2px solid #222;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+/* =========================
+   GET IT SOLD / CARDS
+========================= */
+
+.real-estate-cards {
+    background-color: #f5f5f5;
+
+    color: #222;
+
+    padding: 100px 8%;
+}
+
+.cards-header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.cards-header h1 {
+    font-family: 'Cinzel', serif;
+}
+
+
+/* Card */
+
+.card {
+    width: 65%;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+
+    overflow: hidden;
+
+    margin-bottom: 30px;
+}
+
+
+/* Card Image */
+
+.card img {
+    width: 100%;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* Card Content */
+
+.card-content {
+    padding: 25px 30px;
+
+    text-align: center;
+}
+
+.card h2 {
+    font-family: 'Cinzel', serif;
+
+    font-size: 1.2rem;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+}
+
+
+/* Zig-Zag Layout */
+
+.card:nth-child(2) {
+    margin-left: auto;
+}
+
+.card:nth-child(3) {
+    margin-right: auto;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* Navbar */
+
+    .header-container {
+        padding: 12px 20px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    /* Burger */
+
+      .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    .menu-toggle:hover,
+    .menu-toggle:focus {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    /* Mobile Navigation */
+
+    .main-nav {
+        position: fixed;
+
+        top: 0;
+        right: 0;
+
+        width: 280px;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 25px;
+
+        padding-top: 100px;
+
+        background: rgba(0, 0, 0, 0.98);
+
+        backdrop-filter: blur(8px);
+
+        transform: translateX(100%);
+
+        transition: transform 0.4s ease;
+
+        z-index: 1001;
+    }
+
+    .main-nav.active {
+        transform: translateX(0);
+    }
+
+    .main-nav a {
+        width: 100%;
+
+        text-align: center;
+
+        padding: 15px;
+    }
+
+    .main-nav a:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+    .main-nav a::after {
+        display: block;
+        width: 0;
+    }
+
+    .main-nav a:hover::after {
+        width: 50px;
+    }
+
+    /* Hero */
+
+    .main-content {
+        padding: 0 20px;
+    }
+
+    .main-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-content h3 {
+        font-size: 0.85rem;
+    }
+
+
+    /* About */
+
+    .about-marci {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 25px;
+
+        gap: 40px;
+    }
+
+    .marci-image {
+        width: 80%;
+
+        max-width: 400px;
+    }
+
+    .marci-info {
+        max-width: 100%;
+    }
+
+    .marci-info h2 {
+        font-size: 2rem;
+    }
+
+
+    /* Cards */
+
+    .real-estate-cards {
+        padding: 70px 25px;
+    }
+
+    .card {
+        width: 100%;
+
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 25px 20px;
+    }
+}
+
+
+
+/* =========================
+   FEATURED PROPERTIES
+========================= */
+
+.properties-area {
+    position: relative;
+    background-image: url("Pictures/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.property-carousel {
+
+    color: white;
+    padding: 90px 8%;
+
+    overflow: hidden;
+}
+
+.property-carousel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 0;
+}
+
+.property-carousel > * {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.carousel-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+
+/* Carousel */
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carousel-track-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 33.333%;
+    padding: 0 8px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Arrows */
+
+.carousel-btn {
+    flex-shrink: 0;
+
+    border: none;
+    background: transparent;
+
+    color: #ffffff;
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+    opacity: 0.5;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .property-carousel {
+        padding: 60px 25px;
+    }
+
+    .carousel-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-slide {
+        min-width: 100%;
+        padding: 0;
+    }
+
+    .carousel-slide img {
+        height: 250px;
+    }
+
+    .carousel-btn {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================
+   Dream House
+========================= */
+
+.dream-home {
+    color: white;
+    padding: 90px 8%;
+    overflow: hidden;
+}
+
+.dream-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+.dream-home > * {
+    position: relative;
+    z-index: 1;
+}
+
+.search-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.search-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.search-header p {
+    color: #eee;
+    margin: 0;
+}
+
+.search-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.90);
+}
+
+.search-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-field label {
+    color: #222;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.search-field select,
+.search-field input {
+    width: 100%;
+    padding: 12px 14px;
+    background: white;
+    color: #333;
+    border: 1px solid #ccc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-field select:focus,
+.search-field input:focus {
+    border-color: #222;
+}
+
+.search-field input::placeholder {
+    color: #999;
+}
+
+.search-button {
+    align-self: end;
+    min-height: 43px;
+    padding: 12px 20px;
+    background: #222;
+    color: white;
+    border: 1px solid #222;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.search-button:hover {
+    background: transparent;
+    color: #222;
+}
+
+@media (max-width: 768px) {
+    .dream-home {
+        padding: 70px 25px;
+    }
+
+    .search-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .search-box {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 18px;
+    }
+
+    .search-button {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+/* =========================
+   Services
+========================= */
+
+.services {
+    background: white;
+    color: #222;
+    padding: 100px 8%;
+}
+
+.services-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.services-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    color: #666;
+    margin: 0;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.service-card {
+    text-align: center;
+    padding: 35px 25px;
+    border: 1px solid #ddd;
+    background: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.service-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.service-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.service-content p {
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 70px 25px;
+    }
+
+    .services-header {
+        margin-bottom: 40px;
+    }
+
+    .services-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+}
+
+
+/* =========================
+   CAll or Visit
+========================= */
+
+.contact-section {
+    background: #f5f5f5;
+    color: #222;
+    padding: 100px 8%;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+/* CONTACT FORM */
+
+.contact-header {
+    margin-bottom: 35px;
+}
+
+.contact-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    color: #666;
+    margin: 0;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    background: white;
+    border: 1px solid #ccc;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+
+    outline: none;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: #222;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #999;
+}
+
+.send-button {
+    padding: 13px 28px;
+
+    background: #222;
+    color: white;
+
+    border: 1px solid #222;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.send-button:hover {
+    background: transparent;
+    color: #222;
+}
+
+
+/* OFFICE INFORMATION */
+
+.office-info {
+    padding-top: 5px;
+}
+
+.office-info h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 0 8px;
+}
+
+.office-info h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0 0 30px;
+}
+
+.office-address {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.office-phone {
+    display: inline-block;
+
+    color: #222;
+    font-size: 1.1rem;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #222;
+    padding-bottom: 4px;
+
+    transition: .3s ease;
+}
+
+.office-phone:hover {
+    color: #777;
+    border-color: #777;
+}
+
+
+/* OFFICE HOURS */
+
+.office-hours {
+    margin-top: 45px;
+}
+
+.office-hours h4 {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.open-today {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hours {
+    color: #555;
+    margin-top: 0;
+}
+
+.daily-hours {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 25px;
+
+    color: #444;
+    font-size: 14px;
+}
+
+.clock-icon {
+    font-size: 22px;
+}
+
+.appointment-note {
+    margin-top: 25px;
+
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 70px 25px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .contact-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .office-info {
+        text-align: center;
+    }
+
+    .daily-hours {
+        justify-content: center;
+    }
+
+    .send-button {
+        width: 100%;
+    }
+}
+
+/* Map */
+
+.map-section {
+    background: white;
+    color: #222;
+    padding: 90px 8%;
+}
+
+.map-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.map-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.map-header p {
+    color: #666;
+    margin: 0;
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: 70px 25px;
+    }
+
+    .map-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+}
+
+
+/* Partners */
+
+.affiliations {
+    background: white;
+    padding: 60px 8%;
+}
+
+.affiliations-container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.affiliations-container img {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+}
+
+@media (max-width: 768px) {
+
+    .affiliations {
+        padding: 50px 25px;
+    }
+
+    .affiliations-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+        justify-items: center;
+    }
+
+    .affiliations-container img {
+        width: 140px;
+        height: 100px;
+    }
+}
+
+
+/* Footer */
+
+.site-footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    color: white;
+    border: 1px solid #777;
+    border-radius: 50%;
+
+    text-decoration: none;
+    font-size: 17px;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: white;
+    color: #111;
+    border-color: white;
+}
+
+.site-footer p {
+    margin: 0;
+    color: #aaa;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+    
+<body>
+        <header class="header-main">
+            <div class="header-container">
+
+            <a class="logo">
+                <img src="Pictures/logo3.png" alt="Logo">
+            </a>
+
+                <nav class="main-nav">
+                    <a href="">Home</a>
+                    <a href="">Listing</a>
+                    <a href="">Let's Move</a>
+                    <a href="">About Us</a>
+                </nav>
+
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            </div>
+            
+        </header>
+    <section class="hero">
+        <main class="main-content">
+            <div class="content-container">
+                <h3>MARCI METZGER - THE RIDGE REALTY GROUP</h3>
+                <h1>Pahrump Realtor</h1>
+                <button>Call Now</button>
+            </div>
+
+        </main>
+    </section>
+
+    <section class="about-marci">
+        
+
+        <div class="marci-image">
+            <img src="Pictures/Person.webp" alt="Marci Metzger">
+        </div>
+
+        <div class="marci-info">
+            <h2>MARCI METZGER</h2>
+            <h3>REALTOR FOR NEARLY 3 DECADES</h3>
+
+            <p>
+                Marci Metzger has been helping buyers and sellers
+                navigate the real estate market since 1995. Beginning
+                her career in Washington State, she now serves the
+                Pahrump and Southern Nevada communities.
+            </p>
+
+            <p>
+                With decades of experience, Marci brings knowledge,
+                dedication, and personalized service to every client.
+            </p>
+
+            <a href="tel:+12069196886" class="contact-button">
+                (206) 919-6886
+            </a>
+        </div>
+
+    </section>
+
+
+        <section class="real-estate-cards">
+
+        <div class="cards-header">
+            <h1>GET IT SOLD</h1>
+        </div>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <img src="Pictures/kitchen.webp" alt="Residential Sales">
+
+                <div class="card-content">
+                    <h2>Top Residential Sales Last 5 Years</h2>
+
+                    <p>
+                        We helped nearly 90 clients in 2021, and closed 28.5 million in sales!
+                    </p>
+
+                    <p>
+                        Our team works hard every day to grow and learn, so that we may continue
+                        to excel in our market. Our clients deserve our best, & we want to make
+                        sure our best is better every year.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Pictures/house.webp" alt="Get It Sold">
+
+                <div class="card-content">
+                    <h2>Don't Just List it...</h2>
+
+                    <p>
+                        Get it SOLD! We exhaust every avenue to ensure our listings are at the
+                        fingertips of every possible buyer, getting you top dollar for your home.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Pictures/getsold.webp" alt="Guide to Buyers">
+
+                <div class="card-content">
+                    <h2>Guide to Buyers</h2>
+
+                    <p>
+                        Nobody knows the market like we do. Enjoy having a pro at your service.
+                        Market analysis, upgrades lists, contractors on speed dial, & more!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+<div class="properties-area">
+    <section class="property-carousel">
+
+        <div class="carousel-header">
+            <h1>PHOTO GALLERY</h1>
+        </div>
+    
+        <div class="carousel">
+
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">
+                &#10094;
+            </button>
+
+            <div class="carousel-track-container">
+                <div class="carousel-track">
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel1.webp" alt="carousel 1">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel2.webp" alt="carousel 2">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel3.webp" alt="carousel 3">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel4.webp" alt="carousel 4">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel5.webp" alt="carousel 5">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel6.webp" alt="carousel 6">
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="Pictures/carousel7.webp" alt="carousel 7">
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn next" onclick="moveSlide(1)">
+                &#10095;
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="dream-home">
+        <div class="search-header">
+            <h1>FIND YOUR DREAM HOME</h1>
+            <p>Find the perfect property that fits your needs.</p>
+        </div>
+
+        <div class="search-box">
+
+            <!-- Location -->
+            <div class="search-field">
+                <label>Location</label>
+                <select>
+                    <option value="">Any</option>
+                    <option>Alton</option>
+                    <option>Alamo</option>
+                    <option>Amargosa Valley</option>
+                    <option>Beatty</option>
+                    <option>Beryl</option>
+                    <option>Blue Diamond</option>
+                    <option>Boulder City</option>
+                    <option>Brian Head</option>
+                    <option>Cal Nev Ari</option>
+                    <option>Caliente</option>
+                    <option>Cold Creek</option>
+                    <option>Crystal</option>
+                    <option>Duck Creek Village</option>
+                    <option>Dyer</option>
+                    <option>Elko</option>
+                    <option>Ely</option>
+                    <option>Goldfield</option>
+                    <option>Goodsprings</option>
+                    <option>Hatch</option>
+                    <option>Henderson</option>
+                    <option>Indian Springs</option>
+                    <option>Jean</option>
+                    <option>Las Vegas</option>
+                    <option>Laughlin</option>
+                    <option>Logandale</option>
+                    <option>Manhattan</option>
+                    <option>Mc Gill</option>
+                    <option>Mesquite</option>
+                    <option>Moapa</option>
+                    <option>Mount Charleston</option>
+                    <option>Mountain Springs</option>
+                    <option>North Las Vegas</option>
+                    <option>Other</option>
+                    <option>Overton</option>
+                    <option>Pahrump</option>
+                    <option>Palm Gardens</option>
+                    <option>Panaca</option>
+                    <option>Parowan</option>
+                    <option>Pioche</option>
+                    <option>Round Mountain</option>
+                    <option>Sandy Valley</option>
+                    <option>Searchlight</option>
+                    <option>Tonopah</option>
+                </select>
+            </div>
+
+            <!-- Type -->
+            <div class="search-field">
+                <label>Type</label>
+                <select>
+                    <option value="">Any</option>
+                    <option>Land</option>
+                    <option>Residential Lease</option>
+                    <option>High Rise</option>
+                    <option>Residential</option>
+                </select>
+            </div>
+
+            <!-- Sort By -->
+            <div class="search-field">
+                <label>Sort By</label>
+                <select>
+                    <option>Newest</option>
+                    <option>Oldest</option>
+                    <option>Least Expensive to Most</option>
+                    <option>Most Expensive to Least</option>
+                    <option>Bedrooms (Low to High)</option>
+                    <option>Bedrooms (High to Low)</option>
+                    <option>Bathrooms (Low to High)</option>
+                    <option>Bathrooms (High to Low)</option>
+                </select>
+            </div>
+
+            <!-- Bedrooms -->
+            <div class="search-field">
+                <label>Bedrooms</label>
+                <select>
+                    <option>Any number</option>
+                    <option>Studio</option>
+                    <option>1+</option>
+                    <option>2+</option>
+                    <option>3+</option>
+                    <option>4+</option>
+                    <option>5+</option>
+                    <option>6+</option>
+                </select>
+            </div>
+
+            <!-- Baths -->
+            <div class="search-field">
+                <label>Baths</label>
+                <select>
+                    <option>Any number</option>
+                    <option>1+</option>
+                    <option>2+</option>
+                    <option>3+</option>
+                    <option>4+</option>
+                    <option>5+</option>
+                    <option>6+</option>
+                </select>
+            </div>
+
+            <!-- Min Price -->
+            <div class="search-field">
+                <label>Min Price</label>
+                <input
+                    type="number"
+                    placeholder="Enter minimum price"
+                    min="0"
+                >
+            </div>
+
+            <!-- Max Price -->
+            <div class="search-field">
+                <label>Max Price</label>
+                <input
+                    type="number"
+                    placeholder="Enter maximum price"
+                    min="0"
+                >
+            </div>
+
+            <!-- Search Button -->
+            <button class="search-button">SEARCH NOW</button>
+
+        </div>
+    </section>
+</div>
+
+
+<section class="services">
+
+    <div class="services-header">
+        <h1>OUR SERVICES</h1>
+        <p>Professional real estate services tailored to your needs.</p>
+    </div>
+
+    <div class="services-container">
+
+        <!-- Service 1 -->
+        <div class="service-card">
+            <img src="Pictures/service1.webp" alt="Buying a Home">
+
+            <div class="service-content">
+                <h2>Real Estate Done Right</h2>
+                <p>
+                    Nervous about your property adventure? Don’t be. 
+                    Whether you're getting ready to buy or sell your residence, 
+                    looking at investment properties, or just curious about the markets, 
+                    our team ensures you get the best experience possible!
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+            <img src="Pictures/service2.webp" alt="Selling a Home">
+
+            <div class="service-content">
+                <h2>Commercial & Residential</h2>
+                <p>
+                    Large or small, condo or mansion, we can find it 
+                    and get at the price that's right. Fixer-uppers? Luxury? 
+                    We can help with all of it! We live, work, and play in this 
+                    community. Happy to help you find where to put you hard-earned dollars.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+            <img src="Pictures/service3.webp" alt="Real Estate Consultation">
+
+            <div class="service-content">
+                <h2>Rely on Expertise</h2>
+                <p>
+                    If you have questions about affordability, credit, and loan options, 
+                    trust us to connect you with the right people to get the answers you 
+                    need in a timely fashion. We make sure you feel confident and educated 
+                    every step of the way.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <div class="contact-header">
+                <h1>VISIT OR CALL US</h1>
+                <p>Have a question? We'd love to hear from you.</p>
+            </div>
+
+            <form>
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Your Name"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Your Email"
+                        required
+                    >
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="6" 
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="send-button">
+                    SEND MESSAGE
+                </button>
+            </form>
+
+        </div>
+
+
+        <!-- Office Information -->
+        <div class="office-info">
+
+            <h2>MARCI METZGER</h2>
+
+            <h3>THE RIDGE REALTY GROUP</h3>
+
+            <p class="office-address">
+                3190 HW-160, Suite F<br>
+                Pahrump, Nevada 89048<br>
+                United States
+            </p>
+
+            <a href="tel:2069196886" class="office-phone">
+                (206) 919-6886
+            </a>
+
+            <div class="office-hours">
+
+                <h4>OFFICE HOURS</h4>
+
+                <p class="open-today">Open today</p>
+
+                <p class="hours">
+                    08:00 am – 07:00 pm
+                </p>
+
+                <div class="daily-hours">
+                    <span class="clock-icon">◷</span>
+                    <span>Open daily &nbsp; 8:00 am - 7:00 pm</span>
+                </div>
+
+                <p class="appointment-note">
+                    Appointments outside office hours available upon request.
+                    Just call!
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="map-section">
+
+    <div class="map-header">
+        <h1>FIND US</h1>
+        <p>Visit us at our Pahrump office.</p>
+    </div>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=3190+HW-160+Suite+F,+Pahrump,+NV+89048&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+</section>
+
+<section class="affiliations">
+
+    <div class="affiliations-container">
+
+        <img src="Pictures/icon1.webp"
+             alt="The Ridge Realty Group">
+
+        <img src="Pictures/icon2.webp"
+             alt="Equal Housing Opportunity">
+
+        <img src="Pictures/icon3.webp"
+             alt="REALTOR">
+
+        <img src="Pictures/icon4.webp"
+             alt="Pahrump Valley Chamber of Commerce">
+
+    </div>
+
+</section>
+
+<footer class="site-footer">
+
+    <div class="social-links">
+
+        <a href="#" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <a href="#" aria-label="Yelp">
+            <i class="fab fa-yelp"></i>
+        </a>
+
+    </div>
+
+    <p>
+        Copyright © 2026 Marci METZGER - All Rights Reserved
+    </p>
+
+</footer>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
